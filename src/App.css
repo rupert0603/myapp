@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  /* white-space: normal; */
+}
+
 .App {
   text-align: center;
 }
@@ -7,11 +12,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +29,90 @@
   color: white;
 }
 
+.mainContainer {
+  width: 50%;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.yearChanger,
+.addNewEntry,
+.logout {
+  border: 2px solid black;
+  border-radius: 25px;
+  /* display: inline-block; */
+  padding: 10px;
+  background-color: #2c6271;
+}
+
+.yearChanger:hover,
+.addNewEntry:hover,
+.month:hover,
+.logout:hover {
+  cursor: pointer;
+  background-color: rgba(120, 212, 240, 0.5);
+}
+
+.monthsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.month {
+  width: 33%;
+  border: 1px solid black;
+  background-color: #2c6271;
+}
+
+.entryDate {
+  background-color: rgb(201, 128, 32);
+  border: 1px solid black;
+  /* width: 100%; */
+}
+
+.entryContent {
+  text-align: left;
+  word-break: break-all;
+  white-space: pre-wrap;
+  padding: 10px;
+}
+
+.entryContainer {
+  width: 100%;
+  background-color: rgba(67, 173, 206, 0.1);
+  margin: 10px;
+}
+
+.monthlyEntriesContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.deleteForm {
+  color: black;
+  background-color: white;
+  border: 3px solid rgb(243, 67, 36);
+  padding-bottom: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }
