@@ -16,7 +16,7 @@ class Entries extends React.Component {
 
   componentDidMount(){
     if(localStorage.getItem('currentUser')){
-      axios.get('http://localhost:8080/entries', {
+      axios.get('https://nameless-reaches-87715.herokuapp.com/', {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'), 
         },

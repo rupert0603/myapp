@@ -11,7 +11,7 @@ class LoginForm extends React.Component {
   }
 
   loginBtnHandler = () => {
-    axios.post('http://localhost:8080/', this.state).then((res) => {
+    axios.post('https://nameless-reaches-87715.herokuapp.com/', this.state).then((res) => {
       if(res.data.error){
         alert(res.data.error);
       } else {
