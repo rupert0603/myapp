@@ -18,7 +18,7 @@ class RegistrationForm extends React.Component {
       return (alert(`Passwords doesn't match. Please type the same passwords`));
     }
 
-    axios.post('http://localhost:8080/register', this.state).then((res) => {
+    axios.post('https://nameless-reaches-87715.herokuapp.com/register', this.state).then((res) => {
 
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('currentUser', JSON.stringify(res.data.userData));

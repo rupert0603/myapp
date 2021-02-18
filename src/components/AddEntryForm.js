@@ -35,7 +35,7 @@ class AddEntryForm extends React.Component {
 
   addNewEntryHandler = () => {
     
-    axios.post('http://localhost:8080/entries', {
+    axios.post('https://nameless-reaches-87715.herokuapp.com/entries', {
       user_id: this.props.currentUser._id,
       entryDate: this.state.dateForm,
       content: this.state.contentForm,

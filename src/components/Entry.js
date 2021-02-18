@@ -31,7 +31,7 @@ class Entry extends React.Component {
 
   submitBtnHandler = () => {
     
-    axios.patch('http://localhost:8080/entries/' + this.props.entry._id, {
+    axios.patch('https://nameless-reaches-87715.herokuapp.com/entries/' + this.props.entry._id, {
       content: this.state.editedContent,
     }, {
       headers: {
@@ -70,7 +70,7 @@ class Entry extends React.Component {
 
   deleteEntry = () =>{
     
-    axios.delete('http://localhost:8080/entries/' + this.props.entry._id, {
+    axios.delete('https://nameless-reaches-87715.herokuapp.com/entries/' + this.props.entry._id, {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'), 
       }, 
