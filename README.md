@@ -27,7 +27,7 @@ A full stack web application where users can post their journal entries for any 
 
 1. Go into the directory created
    ```
-   cd react-router-pokedex
+   cd myapp
    ```
 2. Install dependencies
    ```
